@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="backgroundColor" stylesheets="@../../styles/styleCitizen.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univr.passaporti.generic.LoginController">
+   <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="240.0" VBox.vgrow="ALWAYS">
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+         <HBox.margin>
+            <Insets right="100.0" />
+         </HBox.margin>
+         <Image url="@../../images/logoGold.png" />
+      </ImageView>
+      <Label alignment="CENTER" prefHeight="240.0" prefWidth="500.0" text="PASSAPORTO&#10;ONLINE" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+         <font>
+            <Font name="Bauhaus 93" size="60.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.44075829383886256" startY="0.5355450236966824">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8549019694328308" green="0.6470588445663452" blue="0.125490203499794" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.007662835249042145">
+                     <color>
+                        <Color red="0.8549019694328308" green="0.6470588445663452" blue="0.125490203499794" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5517241379310345">
+                     <color>
+                        <Color red="1.0" green="0.843137264251709" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.843137264251709" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="150.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+         <HBox.margin>
+            <Insets left="100.0" />
+         </HBox.margin>
+         <Image url="@../../images/europe.png" />
+      </ImageView>
+   </HBox>
+   <VBox alignment="BOTTOM_CENTER" fillWidth="false" prefHeight="360.0" spacing="80.0" VBox.vgrow="ALWAYS">
+      <TextField fx:id="cfField" maxHeight="50.0" onKeyTyped="#checkFieldsCitizens" prefHeight="50.0" prefWidth="360.0" promptText="codice fiscale" styleClass="textField_box" stylesheets="@../../styles/styleCitizen.css" VBox.vgrow="ALWAYS">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <PasswordField fx:id="passwordField" maxHeight="50.0" onKeyTyped="#checkFieldsCitizens" prefHeight="50.0" prefWidth="360.0" promptText="password" styleClass="textField_box" stylesheets="@../../styles/styleCitizen.css" VBox.vgrow="ALWAYS">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </PasswordField>
+      <Button fx:id="loginButton" alignment="CENTER" disable="true" maxHeight="50.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#loginCitizen" prefHeight="50.0" prefWidth="200.0" text="accedi" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+         <font>
+            <Font name="Bauhaus 93" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </VBox>
+   <HBox alignment="CENTER" prefHeight="80.0" VBox.vgrow="ALWAYS">
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+      <Label alignment="CENTER" onMouseClicked="#onRegistrationLinkClick" text="Non sei registrato? Registrati" textAlignment="CENTER" textFill="#00ffffe3" HBox.hgrow="ALWAYS">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+         <font>
+            <Font name="System" size="15.0" />
+         </font>
+      </Label>
+   </HBox>
+   <ImageView fitHeight="61.0" fitWidth="53.0" onMouseClicked="#onBackButtonClick" opacity="0.4" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <Image url="@../../images/backArrow.png" />
+   </ImageView>
+</VBox>

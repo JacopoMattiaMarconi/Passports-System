@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="backgroundColor" stylesheets="@../../styles/styleCitizen.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univr.passaporti.citizen.RegistrationControllerCitizen">
+   <children>
+      <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="240.0" VBox.vgrow="ALWAYS">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/logoGold.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="100.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label alignment="CENTER" prefHeight="240.0" prefWidth="500.0" text="REGISTRAZIONE" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Bauhaus 93" size="60.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.44075829383886256" startY="0.5355450236966824">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8549019694328308" green="0.6470588445663452" blue="0.125490203499794" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.007662835249042145">
+                           <color>
+                              <Color red="0.8549019694328308" green="0.6470588445663452" blue="0.125490203499794" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.5517241379310345">
+                           <color>
+                              <Color red="1.0" green="0.843137264251709" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="0.843137264251709" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <ImageView fitHeight="143.0" fitWidth="143.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/europe.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="100.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="200.0">
+         <children>
+            <TextField fx:id="nameField" onKeyTyped="#enableRegistration" prefHeight="50.0" prefWidth="350.0" promptText="Nome" styleClass="textField_box" stylesheets="@../../styles/styleCitizen.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="surnameField" onKeyTyped="#enableRegistration" prefHeight="50.0" prefWidth="350.0" promptText="Cognome" styleClass="textField_box" stylesheets="@../../styles/styleCitizen.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="250.0" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+         <children>
+            <TextField fx:id="cfField" onKeyTyped="#enableRegistration" prefHeight="50.0" prefWidth="350.0" promptText="Codice Fiscale" styleClass="textField_box" stylesheets="@../../styles/styleCitizen.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <DatePicker fx:id="dateField" onAction="#enableRegistration" prefHeight="50.0" prefWidth="150.0" promptText="Data di nascita">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </DatePicker>
+            <TextField fx:id="placeField" onKeyTyped="#enableRegistration" prefHeight="50.0" prefWidth="350.0" promptText="Luogo di Nascita" styleClass="textField_box">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="450.0" prefHeight="100.0" spacing="200.0">
+         <children>
+            <PasswordField fx:id="passwordField" onKeyTyped="#enableRegistration" prefHeight="50.0" prefWidth="350.0" promptText="Password" styleClass="textField_box" stylesheets="@../../styles/styleCitizen.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </PasswordField>
+            <PasswordField fx:id="passwordConfirmField" disable="true" onKeyTyped="#enableRegistration" prefHeight="50.0" prefWidth="350.0" promptText="Conferma Password" styleClass="textField_box" stylesheets="@../../styles/styleCitizen.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </PasswordField>
+         </children>
+      </HBox>
+      <HBox alignment="BOTTOM_CENTER" prefHeight="100.0">
+         <children>
+            <Button fx:id="registrationButton" disable="true" mnemonicParsing="false" onAction="#registration" prefHeight="50.0" prefWidth="200.0" text="Registrati">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </HBox>
+      <ImageView fitHeight="61.0" fitWidth="53.0" onMouseClicked="#onBackButtonClick" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/backArrow.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </ImageView>
+   </children>
+</VBox>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univr.passaporti.generic.MainController">
+    <children>
+        <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="240.0" VBox.vgrow="ALWAYS">
+            <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" style="-fx-image-align: center;">
+                      <image>
+                          <Image url="@../images/logo.png" />
+                      </image>
+               <HBox.margin>
+                  <Insets right="100.0" />
+               </HBox.margin>
+                  </ImageView>
+                  <Label alignment="CENTER" prefHeight="240.0" prefWidth="430.0" text="PASSAPORTO&#10;ONLINE" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+                      <font>
+                          <Font name="Bauhaus 93" size="50.0" />
+                      </font>
+                  </Label>
+                  <ImageView fitHeight="143.0" fitWidth="143.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                      <image>
+                          <Image url="@../images/europe.png" />
+                      </image>
+               <HBox.margin>
+                  <Insets left="100.0" />
+               </HBox.margin>
+                  </ImageView>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="360.0" VBox.vgrow="ALWAYS">
+            <children>
+            <Button fx:id="buttonAmministrazione" mnemonicParsing="false" onMouseClicked="#onAdministrationButtonClick" prefHeight="430.0" prefWidth="430.0" styleClass="backgroundColor" stylesheets="@../styles/styleAdministration.css" text="ACCESSO PER IL PERSONALE AMMINISTRATIVO" textAlignment="RIGHT" wrapText="true">
+               <font>
+                  <Font name="Bauhaus 93" size="40.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="0.4028436018957347" startX="0.2511848341232228" startY="0.2559241706161137">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8549019694328308" green="0.6470588445663452" blue="0.125490203499794" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.007662835249042145">
+                           <color>
+                              <Color red="0.8549019694328308" green="0.6470588445663452" blue="0.125490203499794" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="0.843137264251709" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="buttonCittadini" mnemonicParsing="false" onMouseClicked="#onCitizensButtonClick" prefHeight="430.0" prefWidth="430.0" styleClass="backgroundColor" stylesheets="@../styles/styleCitizen.css" text="ACCESSO PER IL CITTADINO" wrapText="true">
+               <font>
+                  <Font name="Bauhaus 93" size="40.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.6635071090047394" endY="0.6872037914691944" startX="0.26540284360189575" startY="0.3507109004739336">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="0.843137264251709" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.23371647509578533">
+                           <color>
+                              <Color red="1.0" green="0.843137264251709" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.8549019694328308" green="0.6470588445663452" blue="0.125490203499794" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            </children>
+        </HBox>
+    </children>
+</VBox>

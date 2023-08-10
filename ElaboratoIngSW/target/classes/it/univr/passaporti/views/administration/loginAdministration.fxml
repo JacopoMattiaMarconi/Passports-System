@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="backgroundColor" stylesheets="@../../styles/styleAdministration.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univr.passaporti.generic.LoginController">
+    <children>
+        <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="240.0" VBox.vgrow="ALWAYS">
+            <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" style="-fx-image-align: center;" HBox.hgrow="ALWAYS">
+                      <image>
+                          <Image url="@../../images/logoGold.png" />
+                      </image>
+               <HBox.margin>
+                  <Insets right="100.0" />
+               </HBox.margin>
+                  </ImageView>
+                  <Label alignment="CENTER" prefHeight="240.0" prefWidth="535.0" text="PORTALE&#10;AMMINISTRAZIONE" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+                      <font>
+                          <Font name="Bauhaus 93" size="60.0" />
+                      </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.44075829383886256" startY="0.5355450236966824">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8549019694328308" green="0.6470588445663452" blue="0.125490203499794" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.007662835249042145">
+                           <color>
+                              <Color red="0.8549019694328308" green="0.6470588445663452" blue="0.125490203499794" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.5517241379310345">
+                           <color>
+                              <Color red="1.0" green="0.843137264251709" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="0.843137264251709" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="150.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                      <image>
+                          <Image url="@../../images/europe.png" />
+                      </image>
+               <HBox.margin>
+                  <Insets left="100.0" />
+               </HBox.margin>
+                  </ImageView>
+            </children>
+        </HBox>
+          <VBox alignment="CENTER" fillWidth="false" prefHeight="380.0" spacing="80.0" VBox.vgrow="ALWAYS">
+              <children>
+                  <TextField fx:id="idFieldAdmin" maxHeight="50.0" onKeyTyped="#checkFieldsAdmin" prefHeight="50.0" prefWidth="360.0" promptText="codice utente" styleClass="textField_box" stylesheets="@../../styles/styleCitizen.css" VBox.vgrow="ALWAYS">
+                      <font>
+                          <Font name="System Bold" size="15.0" />
+                      </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+                  <PasswordField fx:id="passwordFieldAdmin" maxHeight="50.0" onKeyTyped="#checkFieldsAdmin" prefHeight="50.0" prefWidth="360.0" promptText="password" styleClass="textField_box" stylesheets="@../../styles/styleCitizen.css" VBox.vgrow="ALWAYS">
+                      <font>
+                          <Font name="System Bold" size="15.0" />
+                      </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </PasswordField>
+                  <Button fx:id="loginButtonAdmin" alignment="CENTER" disable="true" maxHeight="50.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#loginAdmin" prefHeight="50.0" prefWidth="200.0" text="accedi" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="Bauhaus 93" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+              </children>
+          </VBox>
+      <ImageView fitHeight="61.0" fitWidth="53.0" onMouseClicked="#onBackButtonClick" opacity="0.4" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
+         <image>
+            <Image url="@../../images/backArrow.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </ImageView>
+    </children>
+</VBox>

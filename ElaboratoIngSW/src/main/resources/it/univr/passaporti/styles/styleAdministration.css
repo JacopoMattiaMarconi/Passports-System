@@ -1,0 +1,24 @@
+.backgroundColor{
+    -fx-background-color: linear-gradient(to right, #325B8D, #0b356d);
+}
+
+.combo-box{
+    -fx-background-color: transparent;
+    -fx-border-color: #929292;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-font-size: 15px;
+}
+
+.combo-box .arrow{
+    -fx-background-color: #929292;
+}
+
+.combo-box .arrow-button{
+    -fx-background-color: transparent;
+    -fx-border-style:none;
+}
+
+.combo-box .list-cell{
+    -fx-background-color: transparent;
+    -fx-text-fill: #000000;
+}

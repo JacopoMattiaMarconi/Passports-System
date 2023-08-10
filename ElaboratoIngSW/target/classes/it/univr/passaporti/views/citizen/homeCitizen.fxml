@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univr.passaporti.citizen.HomeControllerCitizen">
+   <children>
+      <HBox id="style.css" alignment="CENTER" prefHeight="120.0" spacing="75.0" styleClass="backgroundColor" stylesheets="@../../styles/styleCitizen.css">
+         <children>
+            <ImageView fitHeight="116.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/logoGold.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="100.0" />
+               </HBox.margin></ImageView>
+            <Label alignment="CENTER" text="PASSAPORTO ELETTRONICO" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Bauhaus 93" size="50.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.44075829383886256" startY="0.5355450236966824">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8549019694328308" green="0.6470588445663452" blue="0.125490203499794" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.007662835249042145">
+                           <color>
+                              <Color red="0.8549019694328308" green="0.6470588445663452" blue="0.125490203499794" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.5517241379310345">
+                           <color>
+                              <Color red="1.0" green="0.843137264251709" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="0.843137264251709" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <ImageView fitHeight="100.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/europe.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="100.0" />
+               </HBox.margin></ImageView>
+         </children>
+         <effect>
+            <Glow level="0.0" />
+         </effect>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox prefHeight="57.0" prefWidth="631.0">
+                     <children>
+                        <Label fx:id="welcomeLabel" prefHeight="64.0" prefWidth="793.0" text="Benvenuto, utente">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <VBox alignment="CENTER" prefHeight="521.0" prefWidth="631.0" spacing="50.0">
+                     <children>
+                        <Button fx:id="richiestaButton" mnemonicParsing="false" onAction="#onRichiestaButtonClick" prefHeight="88.0" prefWidth="271.0" text="Richiesta &#10;passaporto" textAlignment="CENTER">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="ritiroButton" mnemonicParsing="false" onAction="#onRitiroButtonClick" prefHeight="88.0" prefWidth="271.0" text="Ritiro &#10;passaporto" textAlignment="CENTER">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <TabPane fx:id="tabPane" prefHeight="526.0" prefWidth="640.0" tabClosingPolicy="UNAVAILABLE" tabMaxHeight="50.0" tabMinHeight="50.0">
+                    <tabs>
+                      <Tab fx:id="tabAppuntamenti" text="Prossimo Appuntamento" />
+                      <Tab fx:id="tabDocumenti" text="Documenti necessari" />
+                    </tabs>
+                  </TabPane>
+               </children></VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="79.0" prefWidth="1280.0" spacing="50.0">
+         <children>
+            <ImageView fitHeight="61.0" fitWidth="53.0" onMouseClicked="#onAccountButtonClick" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/user.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="61.0" fitWidth="53.0" onMouseClicked="#onLogoutClick" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/logout.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
+         </children>
+      </HBox>
+   </children>
+</VBox>

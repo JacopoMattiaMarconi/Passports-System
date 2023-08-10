@@ -1,0 +1,77 @@
+.backgroundColor{
+    -fx-background-color: linear-gradient(to right, #AA405C, #6B2E3E);
+}
+
+.textField_box{
+    -fx-background-color: transparent;
+    -fx-border-color: #DEDEE4;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-text-fill: #DEDEE4;
+}
+
+.textField_box_white{
+    -fx-background-color: transparent;
+    -fx-border-color: #929292;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-text-fill: #929292;
+}
+
+.date_box{
+    -fx-text-fill: #DEDEE4;
+}
+
+.tab {
+
+    -fx-pref-width: 200
+}
+.tab-header-background {
+    #-fx-background-color: transparent;
+}
+
+.tab-pane{
+    -fx-padding: 0 -1 -1 -1
+}
+
+.calendar_today{
+    -fx-border-color: #0000FF;
+}
+
+.combo-box{
+    -fx-background-color: transparent;
+    -fx-border-color: #DEDEE4;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-font-size: 15px;
+}
+.combo-box .arrow{
+    -fx-background-color: #DEDEE4;
+}
+.combo-box .arrow-button{
+    -fx-background-color: transparent;
+    -fx-border-style:none;
+}
+.combo-box .list-cell{
+    -fx-background-color: transparent;
+    -fx-text-fill: #DEDEE4;
+}
+.combo-box .list-view .list-cell{
+    -fx-background-color: transparent;
+    -fx-text-fill: #000000;
+}
+
+.combo-box-white{
+    -fx-background-color: transparent;
+    -fx-border-color: #929292;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-font-size: 15px;
+}
+.combo-box-white .arrow{
+    -fx-background-color: #929292;
+}
+.combo-box-white .arrow-button{
+    -fx-background-color: transparent;
+    -fx-border-style:none;
+}
+.combo-box-white .list-cell{
+    -fx-background-color: transparent;
+    -fx-text-fill: #000000;
+}
